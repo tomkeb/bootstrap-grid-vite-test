@@ -1,6 +1,11 @@
 const path = require('path')
 
+import htmlPurge from 'vite-plugin-html-purgecss'
+
 export default {
+  plugins: [
+      htmlPurge(),
+  ],
   root: path.resolve(__dirname, 'src'),
   resolve: {
     alias: {

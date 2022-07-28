@@ -12,20 +12,13 @@
 @import "~bootstrap/scss/mixins";
 //@import "~bootstrap/scss/root";
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1440px
-);
+// sem lze přidat např. grid breakpoints
 
 @import "~bootstrap/scss/containers";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
 
-$utilities: map-remove($utilities, "gap", "float", "padding-end", "padding-start", "margin-end", "margin-start", "font-family", "font-size", "font-style", "font-weight", "line-height", "text-opacity", "border", "border-top", "border-bottom", "border-left", "border-right", "border-start", "border-color", "border-width", "border-opacity", "width", "height", "negative-margin", "negative-margin-x", "negative-margin-y", "negative-margin-top", "negative-margin-end", "negative-margin-bottom", "negative-margin-start", "color", "background-color", "bg-opacity", "gradient", "user-select", "pointer-events", "rounded", "rounded-top", "rounded-end", "rounded-bottom", "rounded-start", "visibility", "shadow", "opacity", "text");
+$utilities: map-remove($utilities, "gap", "float", "padding-end", "padding-start", "margin-end", "margin-start", "font-family", "font-size", "font-style", "font-weight", "line-height", "text-opacity", "border", "border-top", "border-bottom", "border-left", "border-right", "border-start", "border-color", "border-width", "border-opacity", "width", "height", "negative-margin", "negative-margin-x", "negative-margin-y", "negative-margin-top", "negative-margin-end", "negative-margin-bottom", "negative-margin-start", "color", "background-color", "bg-opacity", "gradient", "user-select", "pointer-events", "rounded", "rounded-top", "rounded-end", "rounded-bottom", "rounded-start", "visibility", "shadow", "opacity", "position", "flex", "flex-direction", "flex-grow", "flex-shrink", "align-self");
 
 $utilities: map-merge(
   $utilities, (
